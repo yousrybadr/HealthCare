@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/MooTheme"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:background="#12439e">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spinner_symptomps_id"
+        android:background="#716666" />
+
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shapes"
+        android:text="Take Disition"
+        android:onClick="make_decision"/>
+    <ListView
+        android:id="@+id/listveiw_sympots"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue16">
+
+    </ListView>
+
+
+
+
+</LinearLayout>

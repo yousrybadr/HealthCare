@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="108dp"
+    android:background="@color/blue1" >
+
+    <ImageView
+        android:id="@+id/row_search_home_patient_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_account_circle_black_24dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/row_search_home_patient_img"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/wallet_holo_blue_light"
+                android:text="Name :"/>
+            <TextView
+                android:id="@+id/row_search_home_patient_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:textColor="#ffffff"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/wallet_holo_blue_light"
+                android:text="Email Address :"/>
+            <TextView
+                android:id="@+id/row_search_home_patient_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_height="2dp"
+        android:background="@color/darkorange"
+        android:layout_below="@id/row_search_home_patient_img"
+
+        />
+    
+</RelativeLayout>

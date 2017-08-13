@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.yousry.healthcareapp.CreateHistoryActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/darkorange"
+        android:id="@+id/frame1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/wallet_holo_blue_light"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:background="@color/orange"
+            android:text="Adding New History :"/>
+
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/blue"
+        android:layout_below="@+id/frame1">
+
+    </View>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/frame1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frame1"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor Name"
+                android:paddingLeft="3dp"
+                android:textSize="25dp"
+                android:textColor="@color/wallet_holo_blue_light"
+                android:id="@+id/createHistory_textView_doctorName"
+                android:layout_marginTop="5dp"
+                ></TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/blue"
+                android:layout_below="@+id/frame1">
+
+            </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:paddingLeft="3dp"
+                android:textSize="25dp"
+                android:textColor="@color/wallet_holo_blue_light"
+                android:id="@+id/createHistory_textView_date"
+                android:layout_marginTop="5dp"
+
+                ></TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/blue"
+                android:layout_below="@+id/frame1">
+
+            </View>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/wallet_holo_blue_light">
+
+                <EditText
+                    android:id="@+id/createHistory_editText_caseDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Case Description"
+                    android:textColor="@color/blue1"
+                    android:textColorHint="@color/wallet_holo_blue_light"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="3"
+                    android:singleLine="false" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/wallet_holo_blue_light">
+
+                <EditText
+                    android:id="@+id/createhistory_editText_drug"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Drugs"
+                    android:textColor="@color/blue1"
+                    android:textColorHint="@color/wallet_holo_blue_light"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="3"
+                    android:singleLine="false" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/wallet_holo_blue_light">
+
+                <EditText
+                    android:id="@+id/createHistory_editText_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Notes"
+                    android:textColor="@color/blue1"
+                    android:textColorHint="@color/wallet_holo_blue_light"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="3"
+                    android:singleLine="false" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+         >
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createHistory_button"
+        android:textColorHighlight="@color/orange"
+        android:textColor="@color/wallet_holo_blue_light"
+        android:background="@color/orange"
+        android:text="Done"
+        android:textStyle="bold"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

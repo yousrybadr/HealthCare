@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/doctor_history_menu_action_back"
+        android:orderInCategory="100"
+        android:title="Add History"
+        android:icon="@drawable/ic_arrow_back_white_24dp"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/doctor_history_menu_action_settings"
+        android:orderInCategory="100"
+        android:title="Add History"
+        android:icon="@drawable/mr_ic_settings_dark"
+        app:showAsAction="always" />
+
+
+</menu>

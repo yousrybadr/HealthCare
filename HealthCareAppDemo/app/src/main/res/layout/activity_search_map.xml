@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:id="@+id/map_spinner"
+            android:background="#c8c8c8">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mustafa_x.set_current_location.Google_Map">
+
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_search"
+            android:id="@+id/search_btn"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:onClick="search_doctor"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter"
+                android:id="@+id/filter_btn"
+                android:layout_gravity="right"
+                android:layout_marginTop="450dp"
+                android:layout_marginRight="10dp"
+
+                />
+
+    </fragment>
+
+</LinearLayout>
+
+
+
+

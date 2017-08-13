@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/relative_item_clinic"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:background="@color/blue13"
+        android:id="@+id/r1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.75">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/row_show_clinic_textView_name"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:textColor="@color/wallet_holo_blue_light"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="0.3"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/row_show_clinic_textView_description"
+                    android:text="Description"
+                    android:textStyle="bold"
+                    android:textColor="@color/wallet_holo_blue_light"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:isScrollContainer="true"
+                    android:layout_weight="0.3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/row_show_clinic_textView_phone"
+                    android:text="Phone"
+                    android:textStyle="bold"
+                    android:textColor="@color/wallet_holo_blue_light"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="0.3"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.25">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/wallet_holo_blue_light"
+                        android:text="From"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/orange"
+                        android:id="@+id/row_show_clinic_textView_from"
+                        android:text="Time"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/wallet_holo_blue_light"
+                        android:text="To"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/row_show_clinic_textView_To"
+                        android:text="Time"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/orange"
+                        android:gravity="center"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/row_show_clinic_textView_address"
+        android:textColor="@color/orange"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:background="@color/blue13"
+        android:layout_below="@+id/r1"
+        android:text="Your Address"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorBlack"
+        android:layout_alignParentBottom="true"></View>
+
+</RelativeLayout>

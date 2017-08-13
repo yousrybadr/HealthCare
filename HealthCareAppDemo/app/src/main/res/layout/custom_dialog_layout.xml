@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:background="@drawable/shapes"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BOOKING"
+        android:background="@color/blue16"
+        android:textStyle="bold"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        >
+
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+
+        android:paddingTop="10dp"
+        android:layout_weight="1">
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/custom_dialog_editText_date"
+            android:textColor="@color/colorAccent"
+            android:inputType="date"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT DATE"
+            android:textSize="25px"
+            android:background="@color/blue16"
+            android:textColor="@android:color/white"
+            android:id="@+id/custom_dialog_button_setDate"
+            android:layout_alignBottom="@+id/custom_dialog_editText_date"
+            android:layout_toRightOf="@+id/custom_dialog_editText_date"
+            android:layout_toEndOf="@+id/custom_dialog_editText_date" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/custom_dialog_editText_time"
+            android:layout_marginTop="5dp"
+            android:inputType="time"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@+id/custom_dialog_editText_date"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT TIME"
+            android:layout_marginTop="5dp"
+            android:textSize="25px"
+            android:background="@color/blue16"
+            android:textColor="@android:color/white"
+            android:id="@+id/custom_dialog_button_setTime"
+            android:layout_below="@+id/custom_dialog_button_setDate"
+            android:layout_alignLeft="@+id/custom_dialog_button_setDate"
+            android:layout_alignStart="@+id/custom_dialog_button_setDate" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/custom_dialog_button_book"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_weight="0.5"
+            android:background="@color/blue16"
+            android:text="Book"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue16"
+            android:layout_weight="0.5"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:id="@+id/custom_dialog_button_cancel"
+            android:text="cancel"/>
+
+    </LinearLayout>
+</LinearLayout>

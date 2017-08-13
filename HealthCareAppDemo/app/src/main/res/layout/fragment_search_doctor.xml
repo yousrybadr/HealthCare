@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    >
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchFragment_doctor_searchView"
+        android:layout_marginTop="5dp"
+        android:background="#4c3d3d">
+
+    </SearchView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchFragment_doctor_searchView"
+        android:background="#0bb2e4">
+
+        
+
+
+
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchHomePatientActivity">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/spinner_fields">
+
+    </Spinner>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_ok"
+        android:text="OK"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shapes"/>
+    <ViewSwitcher
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_search_home_patient_listView">
+
+        </ListView>
+    </ViewSwitcher>
+
+
+</LinearLayout>
